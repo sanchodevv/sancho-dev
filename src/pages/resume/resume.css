@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.resume-info{
+    margin-top: -30px;
+}
+.resume-info h1{
+    color: var(--white-1);
+    position: relative;
+    font-size: 32px;
+    font-weight: var(--fw-600);
+}
+.resume-info h1::after{
+    width: 50px;
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    height: 10px;
+    border-radius: 4px;
+    background: var(--text-gradient-yellow);
+}
+.edu-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--white-1)   ;
+    margin-top: 50px;
+}
+.title-logo{
+    width: 50px;
+    height: 50px;
+    background: var(--border-gradient-onyx);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    border: 1px solid var(--jet);
+}
+.title-logo::after{
+    content: "";
+    position: absolute;
+    width: 1.2px;
+    top: 50px;
+    height: 200px;
+    background: var(--jet);
+}
+.title-logo::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+.title-logo img{
+    width: 24px;
+    height: 24px;
+}
+.edu-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    /* color: whit; */
+    margin-left: 15px;
+}
+.edu-info-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.edu-info-item h3{
+    font-size: 18px;
+    color: var(--white-2);
+    font-weight: var(--fw-600);
+}
+.edu-info-item p{
+    background: var(--text-gradient-yellow);
+    background-clip: text;
+    color: transparent;
+    font-size: 14px;
+    
+    font-weight: var(--fw-400);
+}
+.item-check{
+    width: 20px;
+    height: 20px;
+    background: #ffdb7026;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    position: relative;
+    /* z-index: 1000; */
+    border: 1px solid var(--border-gradient-onyx);
+}
+.item-check::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    background: var(--text-gradient-yellow);
+    border-radius: inherit;
+    /* z-index: 999; */
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 100px;
+}
+.skills h1{
+    color: var(--white-1);
+    margin-bottom: 10px;
+}
+.skill__content{
+    background: var(--border-gradient-onyx);
+    border-radius: 14px;
+    border: 1px solid var(--jet);
+    padding:53px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 27px;
+    z-index: 1;
+    box-shadow: var(--shadow-1);
+}
+.skill__content::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+.skill__content h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white-1);
+}
+.uno{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.uno p{
+    margin-top: -5px;
+    color: var(--white-2);
+}
+
+.skill__content span{
+    width: 70px;
+    display: block;
+    height: 12px;
+    border-radius: 4px;
+    background: var(--text-gradient-yellow);
+    margin-bottom: 20px;
+}
+.html .uno span{
+    width: 800px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.css .uno span{
+    width: 600px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.github .uno span{
+    width: 600px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.js .uno span{
+    width: 480px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.react .uno span{
+    width: 400px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.figma .uno span{
+    width: 520px;
+    /* background-color: var(--orange-yellow-crayola); */
+}
+.typescript .uno span{
+    width: 280px;
+}
+.bootstrap .uno span{
+    width: 520px;
+}
+@media (max-width: 468px) {
+    .resume-info{
+        margin-top: 30px;
+    }
+}
