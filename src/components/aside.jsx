@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./component.css"
 import DownloadImage from './button'
 
 const Aside = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className='aside'>
         <div className="aside-img">
-          <div>
-            <img src="/photo.jpg" alt="" />
-          </div>
-          <div className='br'>
-            <h1>Sancho Dev</h1>
-            <p>Web Devoloper</p>
-          </div>
+            <div className="va">
+                <div>
+                  <img src="/photo.jpg" alt="" />
+                </div>
+                <div className='br'>
+                  <h1>Sancho Dev</h1>
+                  <p>Web Devoloper</p>
+                </div>
+                <div className="burger">
+                  <button onClick={() => setIsOpen(!isOpen)}>V</button>
+                </div>
+            </div>
         </div>
-        <div className="aside-content">
+        <div className={`aside-content ${isOpen ? "open" : ""}`}>
             <div className="content-cards">
               <div className="content-card">
               <div className="card-img">

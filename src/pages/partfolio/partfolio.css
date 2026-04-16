@@ -124,6 +124,9 @@
         width: 100% !important;
         height: 100%;
     }
+    .part__card a img{
+        width: 100% !important;
+    }
     .partfolio-info{
         margin-top: 30px;
     }
