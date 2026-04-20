@@ -121,7 +121,7 @@
 }
 @media (max-width: 468px) {
     .part__card a img{
-        width: 300px !important;
+        width: 350px !important;
         height: 100%;
     }
     .part__card a {
