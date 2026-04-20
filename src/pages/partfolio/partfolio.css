@@ -120,11 +120,11 @@
     background-color:  hsla(240, 5%, 17%, 0.75);
 }
 @media (max-width: 468px) {
-    .part__card img{
-        width: 100% !important;
+    .part__card a img{
+        width: 300px !important;
         height: 100%;
     }
-    .part__card a img{
+    .part__card a {
         width: 100% !important;
     }
     .partfolio-info{

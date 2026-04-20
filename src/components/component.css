@@ -210,6 +210,7 @@
         display: block;
         opacity: 0;     
         max-height: 0;
+        /* align-items: start; */
         overflow: hidden;
          /* display: none; */
          transition: all var(--transition-1);
@@ -272,6 +273,7 @@
     .open{
         max-height: 500px;
         opacity: 1;
+    
         /* display: block; */
     }
 }
